@@ -57,9 +57,9 @@ object Build1 : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = "ls"
+            param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
             param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
-            param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
         }
     }
 
@@ -71,7 +71,7 @@ object Build1 : BuildType({
     features {
         merge {
             branchFilter = "+:<default>"
-            destinationBranch = "//repo1/virtual"
+            destinationBranch = "//repo1/development"
         }
     }
 })
