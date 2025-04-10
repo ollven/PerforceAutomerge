@@ -118,6 +118,16 @@ object Composite : BuildType({
         perforceShelveTrigger {
         }
     }
+
+    dependencies {
+        artifacts(Artifact1) {
+            buildRule = lastSuccessful()
+            artifactRules = """
+                images/2024-12-23 15.33.26.jpg/2024-12-23 15.33.26.jpg
+                images/2024-12-23 15.33.45.jpg/2024-12-23 15.33.45.jpg
+            """.trimIndent()
+        }
+    }
 })
 
 object PerforceLocalhost1666repo1mainline : PerforceVcsRoot({
