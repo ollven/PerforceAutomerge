@@ -64,6 +64,10 @@ object Artifact1 : BuildType({
 
 object Artifact2 : BuildType({
     name = "Artifact2"
+
+    vcs {
+        root(PerforceLocalhost1666repo1mainline)
+    }
 })
 
 object Build1 : BuildType({
