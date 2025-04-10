@@ -124,6 +124,10 @@ object Composite : BuildType({
             buildRule = lastSuccessful()
             artifactRules = "images => images"
         }
+        artifacts(Artifact2) {
+            buildRule = lastSuccessful()
+            artifactRules = "files => files"
+        }
     }
 })
 
