@@ -2,6 +2,7 @@ import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.merge
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.projectFeatures.perforceAdminAccess
+import jetbrains.buildServer.configs.kotlin.triggers.perforceShelveTrigger
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.vcs.PerforceVcsRoot
 
@@ -111,6 +112,11 @@ object Composite : BuildType({
         root(PerforceLocalhost1666repo1mainline)
 
         showDependenciesChanges = true
+    }
+
+    triggers {
+        perforceShelveTrigger {
+        }
     }
 })
 
