@@ -126,7 +126,7 @@ object Composite : BuildType({
         }
         artifacts(Artifact2) {
             buildRule = lastSuccessful()
-            artifactRules = "files => fi les"
+            artifactRules = "fi les => fi les"
         }
     }
 })
