@@ -66,7 +66,7 @@ object Artifact1 : BuildType({
 object Artifact2 : BuildType({
     name = "Artifact2"
 
-    artifactRules = "filetoconflict1.txt => files"
+    artifactRules = "filetoconflict1.txt => fi les"
 
     vcs {
         root(PerforceLocalhost1666repo1mainline)
