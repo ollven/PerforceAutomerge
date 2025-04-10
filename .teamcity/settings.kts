@@ -83,6 +83,8 @@ object Composite : BuildType({
     type = BuildTypeSettings.Type.COMPOSITE
 
     vcs {
+        root(PerforceLocalhost1666repo1mainline)
+
         showDependenciesChanges = true
     }
 })
