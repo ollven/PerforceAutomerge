@@ -35,6 +35,7 @@ project {
 
     buildType(Composite)
     buildType(Build1)
+    buildType(Artifact1)
 
     features {
         perforceAdminAccess {
@@ -46,6 +47,10 @@ project {
         }
     }
 }
+
+object Artifact1 : BuildType({
+    name = "Artifact1"
+})
 
 object Build1 : BuildType({
     name = "Build1"
