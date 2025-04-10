@@ -33,6 +33,7 @@ project {
 
     vcsRoot(PerforceLocalhost1666repo1mainline)
 
+    buildType(Artifact2)
     buildType(Composite)
     buildType(Build1)
     buildType(Artifact1)
@@ -59,6 +60,10 @@ object Artifact1 : BuildType({
     vcs {
         root(PerforceLocalhost1666repo1mainline)
     }
+})
+
+object Artifact2 : BuildType({
+    name = "Artifact2"
 })
 
 object Build1 : BuildType({
