@@ -122,7 +122,7 @@ object Composite : BuildType({
     dependencies {
         artifacts(Artifact1) {
             buildRule = lastSuccessful()
-            artifactRules = "images => ima ges"
+            artifactRules = "ima ges => ima ges"
         }
         artifacts(Artifact2) {
             buildRule = lastSuccessful()
