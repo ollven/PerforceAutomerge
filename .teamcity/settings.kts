@@ -50,6 +50,10 @@ project {
 
 object Artifact1 : BuildType({
     name = "Artifact1"
+
+    vcs {
+        root(PerforceLocalhost1666repo1mainline)
+    }
 })
 
 object Build1 : BuildType({
