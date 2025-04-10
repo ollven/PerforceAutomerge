@@ -54,8 +54,8 @@ object Artifact1 : BuildType({
     name = "Artifact1"
 
     artifactRules = """
-        2024-12-23 15.33.26.jpg => images/2024-12-23 15.33.26.jpg
-        2024-12-23 15.33.45.jpg => images/2024-12-23 15.33.45.jpg
+        2024-12-23 15.33.26.jpg => images
+        2024-12-23 15.33.45.jpg => images
     """.trimIndent()
 
     vcs {
