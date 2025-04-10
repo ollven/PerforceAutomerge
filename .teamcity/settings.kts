@@ -27,12 +27,13 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2024.12"
+version = "2025.03"
 
 project {
 
     vcsRoot(PerforceLocalhost1666repo1mainline)
 
+    buildType(Composite)
     buildType(Build1)
 
     features {
@@ -73,6 +74,16 @@ object Build1 : BuildType({
             branchFilter = "+:<default>"
             destinationBranch = "//repo1/development"
         }
+    }
+})
+
+object Composite : BuildType({
+    name = "Composite"
+
+    type = BuildTypeSettings.Type.COMPOSITE
+
+    vcs {
+        showDependenciesChanges = true
     }
 })
 
